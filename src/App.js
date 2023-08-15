@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Home from './component/Home';
 import About from './component/About';
 import Contact from './component/Contact';
@@ -9,13 +7,15 @@ import Navigation from './component/Navigation';
 
 function App() {
   return (
-    <div className="App"> 
+    <div className="p-4">
         <Navigation />
+        <div className='border-2 my-4 p-4 border-slate-200'>
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route  path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
+        </div>
     </div>
   );
 }

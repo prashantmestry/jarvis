@@ -5,10 +5,16 @@ export const AppContext = createContext(null);
 export const AppContextProvider = (props) =>{
 
     const [name , setName] = useState('prashant mestry');
+    const navLink = [
+        { id : '' , title : 'Home' },
+        { id : 'about' , title : 'About' },
+        { id : 'contact' , title : 'Contact' }
+    ]
 
     return(<AppContext.Provider
         value={{
-            name : name
+            name : name,
+            navLink : navLink
         }}
         >
             {props.children}
