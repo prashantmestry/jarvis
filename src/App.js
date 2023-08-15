@@ -4,16 +4,19 @@ import Contact from './component/Contact';
 
 import {  Route, Routes } from 'react-router-dom';
 import Navigation from './component/Navigation';
+import Products from './component/Products';
 
 function App() {
   return (
     <div className="p-4">
         <Navigation />
-        <div className='border-2 my-4 p-4 border-slate-200'>
+        <div className='border-2 my-4 p-4 border-slate-200' >
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route  path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/products' element={<Products />} /> 
+
         </Routes>
         </div>
     </div>
