@@ -1,17 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './component/Home';
+import { AppContextProvider } from './AppContext';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-          Learn React new netlify
-        
-      </header>
+      <div>
+       Navigation will come here
+      </div>
+      <AppContextProvider>
+      <Home />
+    </AppContextProvider>
     </div>
   );
 }
