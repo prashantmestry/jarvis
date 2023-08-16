@@ -9,7 +9,7 @@ const Navigation = (props) =>{
         <div  className="bg-slate-50 p-1 px-2">
             {
                 navLink.map(val =>{
-                    return <Link className='p-3 hover:bg-slate-200' to={`/${val.id}`}>{val.title}</Link>
+                    return <Link key={val.id} className='p-3 hover:bg-slate-200' to={`/${val.id}`}>{val.title}</Link>
                 })
             }       
         </div>
