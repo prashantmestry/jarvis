@@ -1,11 +1,31 @@
-import React, { useContext } from 'react';
-import { AppContext } from '../AppContext';
+import React, { useContext , useState , useEffect } from 'react';
+import { AgGridReact } from 'ag-grid-react';
 
 const Home = (props) =>{
-    const {name} = useContext(AppContext);
+
+    const [rowData, setRowData] = useState([]);
+    const [columnDefs, setColumnDefs] = useState([
+        {field: 'make', filter: true},
+        {field: 'model', filter: true},
+        {field: 'price'}
+      ]);
+
+      useEffect(() => {
+        fetch('https://www.ag-grid.com/example-assets/row-data.json')
+        .then(result => result.json())
+        .then(rowData => setRowData(rowData))
+      }, []);
+
     return(
         <div  className="text-3xl font-bold underline">
-            Home page {name}
+            Home page
+            <div className="ag-theme-alpine" style={{width: 500, height: 500}}>
+                <AgGridReact        
+                    rowData={rowData} // Row Data for Rows
+                    columnDefs={columnDefs} // Column Defs for Columns      
+                    animateRows={true} // Optional - set to 'true' to have rows animate when sorted            
+                />
+            </div>
         </div>
     )
 }
