@@ -19,7 +19,7 @@ const Home = (props) =>{
     return(
         <div  className="text-3xl font-bold underline">
             Home page
-            <div className="ag-theme-alpine" style={{width: 500, height: 500}}>
+            <div className="ag-theme-alpine" style={{width: '100%', height: 500}}>
                 <AgGridReact        
                     rowData={rowData} // Row Data for Rows
                     columnDefs={columnDefs} // Column Defs for Columns      
