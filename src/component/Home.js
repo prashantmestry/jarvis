@@ -1,5 +1,7 @@
-import React, { useContext , useState , useEffect } from 'react';
+import React, { useContext , useState , useEffect, lazy, Suspense } from 'react';
 import { AgGridReact } from 'ag-grid-react';
+
+const HomeNav = lazy( () => import('../component/HomeNav'));
 
 const Home = (props) =>{
 
@@ -26,6 +28,9 @@ const Home = (props) =>{
                     animateRows={true} // Optional - set to 'true' to have rows animate when sorted            
                 />
             </div>
+            <Suspense fallback={<div>Home navigation loading...</div>}>
+                <HomeNav />
+            </Suspense>
         </div>
     )
 }
