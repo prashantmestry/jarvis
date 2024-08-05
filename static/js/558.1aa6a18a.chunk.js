@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjarvis=self.webpackChunkjarvis||[]).push([[558],{4558:(e,s,a)=>{a.r(s),a.d(s,{default:()=>c});a(2791);var n=a(184);const c=e=>(0,n.jsx)("div",{children:"Home nave component"})}}]);
+//# sourceMappingURL=558.1aa6a18a.chunk.js.map

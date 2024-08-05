@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/jarvis/static/css/main.3c2aa141.css",
+    "main.js": "/jarvis/static/js/main.7d0cb243.js",
+    "static/js/739.65d29cce.chunk.js": "/jarvis/static/js/739.65d29cce.chunk.js",
+    "static/js/558.1aa6a18a.chunk.js": "/jarvis/static/js/558.1aa6a18a.chunk.js",
+    "static/js/243.62a942af.chunk.js": "/jarvis/static/js/243.62a942af.chunk.js",
+    "index.html": "/jarvis/index.html",
+    "main.3c2aa141.css.map": "/jarvis/static/css/main.3c2aa141.css.map",
+    "main.7d0cb243.js.map": "/jarvis/static/js/main.7d0cb243.js.map",
+    "739.65d29cce.chunk.js.map": "/jarvis/static/js/739.65d29cce.chunk.js.map",
+    "558.1aa6a18a.chunk.js.map": "/jarvis/static/js/558.1aa6a18a.chunk.js.map",
+    "243.62a942af.chunk.js.map": "/jarvis/static/js/243.62a942af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c2aa141.css",
+    "static/js/main.7d0cb243.js"
+  ]
+}
